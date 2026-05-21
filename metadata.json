@@ -1,0 +1,6 @@
+{
+  "name": "씨마스고등학교 급식",
+  "description": "실시간 한국(KST) 시간대를 기반으로 작동하는 씨마스고등학교 급식, 식단표 영양계산 및 알레르기 관리 시스템",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

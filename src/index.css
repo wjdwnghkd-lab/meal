@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Public Sans", "Pretendard", "Malgun Gothic", sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  
+  --color-primary: #3c5500;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #4f6f00;
+  --color-on-primary-container: #c9f17c;
+  --color-primary-fixed: #c9f07c;
+  --color-primary-fixed-dim: #add463;
+  --color-on-primary-fixed: #141f00;
+  
+  --color-secondary: #536500;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #d2ea7a;
+  --color-on-secondary-container: #576a00;
+  --color-secondary-fixed: #d5ed7d;
+  
+  --color-tertiary: #485229;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #606a3f;
+  --color-on-tertiary-container: #dfeab3;
+  --color-tertiary-fixed: #dde8b2;
+  --color-on-tertiary-fixed: #171e00;
+  --color-on-tertiary-fixed-variant: #414b23;
+  
+  --color-background: #fff8f3;
+  --color-on-background: #201b11;
+  
+  --color-surface: #fff8f3;
+  --color-on-surface: #201b11;
+  --color-on-surface-variant: #444939;
+  --color-surface-dim: #e4d8c9;
+  --color-surface-bright: #fff8f3;
+  --color-surface-container: #f8ecdc;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fef2e2;
+  --color-surface-container-high: #f3e6d7;
+  --color-surface-container-highest: #ede1d1;
+  --color-surface-variant: #ede1d1;
+  
+  --color-outline: #747967;
+  --color-outline-variant: #c4c9b4;
+  
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+}
+
+body {
+  background-color: #FAF7EF;
+  font-family: var(--font-sans);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar styling for horizontal list fields */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Organic components shadows */
+.organic-shadow {
+  box-shadow: 0px 4px 20px rgba(79, 111, 0, 0.05);
+}
+
+.card-inner-shadow {
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.active-nav-glow {
+  box-shadow: 0px 4px 12px rgba(79, 111, 0, 0.2);
+}
+
+.progress-bar-glow {
+  box-shadow: 0px 0px 8px rgba(79, 111, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
